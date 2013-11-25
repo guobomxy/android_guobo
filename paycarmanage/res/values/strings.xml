@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">整车物流管理端</string>
+    <string name="action_settings">设置</string>
+    <!-- login -->
+    <string name="username">账号</string>
+    <string name="username_pre">请输入账号</string>
+    <string name="pwd">密码</string>
+    <string name="pwd_pre">请输入密码</string>
+    <string name="callme">联系我们</string>
+    <string name="mimaback">找回密码</string>
+    <!-- 滑动菜单 -->
+    <string name="yundanlist">运单列表</string>
+    <string name="sijilist">驾驶员列表</string>
+
+</resources>

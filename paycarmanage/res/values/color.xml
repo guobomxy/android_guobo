@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ru_white">#e6e6e6</color>
+    <color name="text_login">#999999</color>
+    <color name="sliding_theme">#333333</color>
+    <color name="sliding_textcolor">#ffffff</color>
+    <color name="view_line">#696969</color>
+    <color name="timecolor">#FAF0E6</color>
+</resources>
