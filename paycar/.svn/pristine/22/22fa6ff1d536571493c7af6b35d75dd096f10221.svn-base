@@ -1,0 +1,42 @@
+package com.eastime.paycar.activitys;
+
+import com.eastime.paycar.R;
+import com.eastime.paycar.R.id;
+import com.eastime.paycar.R.layout;
+
+import android.app.Activity;
+import android.content.Context;
+import android.location.LocationManager;
+import android.os.Bundle;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class AActivity extends Activity{
+	
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+
+		setContentView(R.layout.aactivity);
+//		View v2= findViewById(R.id.ib1); 
+//		 v2.getBackground().setAlpha(0);
+		 openGPS();
+
+	}
+    private boolean openGPS() {
+    	System.out.println("openGPS");
+        LocationManager lm = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
+        if (lm.isProviderEnabled(android.location.LocationManager.GPS_PROVIDER)) {
+            Toast.makeText(this, "GPS已开启", Toast.LENGTH_SHORT).show();
+            ImageView gps = (ImageView) findViewById(R.id.gps);
+            gps.setImageResource(R.drawable.c);
+        }
+        else{
+        	Toast.makeText(this, "请其开启GPS", Toast.LENGTH_SHORT).show();
+        }
+		return false;
+    }
+}

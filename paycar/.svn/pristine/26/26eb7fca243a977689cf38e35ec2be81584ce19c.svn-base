@@ -1,0 +1,90 @@
+package com.eastime.paycar.eventlistener;
+
+import java.util.List;
+import java.util.Locale;
+
+import com.eastime.paycar.util.Contants;
+import com.eastime.paycar.util.DBHelper;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.content.IntentSender.SendIntentException;
+import android.location.Address;
+import android.location.Geocoder;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import android.os.Bundle;
+import android.os.Message;
+import android.widget.Toast;
+
+public class GPSServiceListener implements LocationListener {
+
+	private DBHelper db;
+	private LocationManager locationManager;
+	
+	public GPSServiceListener(DBHelper db,LocationManager locationManager){
+		
+		this.db = db;
+		this.locationManager = locationManager;
+		
+	}
+	
+	
+	@Override
+	public void onLocationChanged(Location location) {
+		
+		Message m = new Message();
+		m.obj = location;
+		
+		
+/*		ContentValues initValues = new ContentValues();
+		
+		Contants.a1 = location.getSpeed()+"";
+		Contants.a2 = location.getLatitude()+"";
+		Contants.a3 = location.getLongitude()+"";
+		List<Address> result = null;
+		// 先将Location转换为GeoPoint
+		// GeoPoint gp=getGeoByLocation(location);
+		try {
+			if (location != null) {
+				// 获取Geocoder，通过Geocoder就可以拿到地址信息
+				Geocoder gc = new Geocoder(null, Locale.getDefault());
+				
+				result= gc.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		initValues.put("a1", location.getSpeed()+"");
+		initValues.put("a2", location.getLatitude()+"");
+		initValues.put("a3", location.getLongitude()+"");
+		//initValues.put("result", result.toString());
+		db.insert("gpsdata", initValues);
+		db.closeConnection();*/
+		
+	}
+
+	@Override
+	public void onProviderDisabled(String arg0) {
+		// TODO Auto-generated method stub
+		
+//		Contants.a1 = (locationManager.getLastKnownLocation(arg0)).getSpeed()+"";
+//		Contants.a2 = (locationManager.getLastKnownLocation(arg0)).getLatitude()+"";
+//		Contants.a3 = (locationManager.getLastKnownLocation(arg0)).getLongitude()+"";
+	}
+
+	@Override
+	public void onProviderEnabled(String arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onStatusChanged(String provider, int status, Bundle extras) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

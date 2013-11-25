@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#333333" >
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/titlebar" >
+
+        <ImageView
+            android:id="@+id/tip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:src="@drawable/icon_5_d" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tip1"
+            android:text="@string/jiechedan"
+            android:textColor="@color/titletext"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/saomiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            
+            android:src="@drawable/plus" />
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="400dip"
+        android:layout_height="2dip"
+        android:layout_below="@+id/rl1"
+        android:background="#2c2c2c" />
+    
+    <TextView 
+        android:id="@+id/tip2"
+        android:layout_below="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="22dp"
+        android:textColor="#cccccc"
+        android:text="我的运单号："/>
+    
+    <ListView 
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tip2"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+        
+    </ListView>
+</RelativeLayout>

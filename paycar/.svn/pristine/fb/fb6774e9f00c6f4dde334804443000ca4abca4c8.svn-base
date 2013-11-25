@@ -1,0 +1,50 @@
+package com.eastime.paycar.activitys;
+
+import com.eastime.paycar.R;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.app.TabActivity;
+import android.content.Intent;
+import android.graphics.Color;
+import android.view.Menu;
+import android.view.Window;
+import android.widget.TabHost;
+import android.widget.TextView;
+
+@SuppressWarnings("deprecation")
+public class Manage extends TabActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		setContentView(R.layout.maintabs);
+		
+		TabHost tabHost = getTabHost();
+		
+		
+		tabHost.addTab(tabHost.newTabSpec("aa").setIndicator("接  车").setContent(new Intent(this, ReceiveCarActivity.class)));
+		
+		tabHost.addTab(tabHost.newTabSpec("ba").setIndicator("交  车").setContent(new Intent(this, PayCarActivity.class)));
+		
+		tabHost.addTab(tabHost.newTabSpec("ca").setIndicator("查  询").setContent(new Intent(this, SelectActivity.class)));
+		
+		tabHost.addTab(tabHost.newTabSpec("ea").setIndicator("系  统").setContent(new Intent(this, SystemSettingActivity.class)));
+		
+		for(int i = 0;i<4;i++){
+			
+			TextView tv = (TextView) tabHost.getTabWidget().getChildAt(i).findViewById(android.R.id.title);
+			
+			//tv.setBackgroundColor(Color.BLACK);
+			//tv.setBackgroundColor(Color.BLACK);
+			tv.setTextColor(Color.WHITE);
+			
+			tv.setPadding(0, 0, 0, 10);
+		}
+		
+		
+	}
+
+
+}

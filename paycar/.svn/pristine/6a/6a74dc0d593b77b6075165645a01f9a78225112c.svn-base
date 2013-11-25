@@ -1,0 +1,156 @@
+package com.eastime.paycar.activitys;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import android.app.Activity;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.eastime.paycar.R;
+import com.eastime.paycar.util.AppContext;
+import com.eastime.paycar.util.Contants;
+import com.eastime.paycar.util.JSONParser;
+import com.eastime.paycar.util.SystemUtils;
+
+public class RegistActivity extends Activity {
+
+	private TextView tip;
+	private EditText userNameT;
+	private EditText phoneNumberT;
+	private EditText pwd1T;
+	private EditText pwd2T;
+	private Button registBtn;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_regist);
+		
+		tip = (TextView) findViewById(R.id.tip_regist);
+		userNameT = (EditText) findViewById(R.id.username);
+		phoneNumberT = (EditText) findViewById(R.id.phonenumber);
+		//phoneNumberT.setOnTouchListener(onTouchListener);
+		pwd1T = (EditText) findViewById(R.id.mima1);
+		pwd2T = (EditText) findViewById(R.id.mima2);
+		
+		registBtn = (Button) findViewById(R.id.querenregist);
+		registBtn.setOnClickListener(onClickListener);
+		
+	}
+
+	View.OnTouchListener onTouchListener = new View.OnTouchListener() {
+		
+		@Override
+		public boolean onTouch(View v, MotionEvent event) {
+			String c = "";
+			switch(v.getId()){
+			case R.id.phonenumber:
+				c = userNameT.getText().toString();
+				if(null == c || "".equals(c)){
+					tip.setTextColor(Color.RED);
+					tip.setText("请输入昵称");
+				}
+				break;
+			case R.id.mima1:
+				break;
+			case R.id.mima2:
+				break;
+			}
+			return false;
+		}
+	};
+	
+	View.OnClickListener onClickListener = new View.OnClickListener() {
+		
+		@Override
+		public void onClick(View v) {
+			//获取注册信息
+			String userName = userNameT.getText().toString();
+			if(null == userName || "".equals(userName)){
+				tip.setTextColor(Color.RED);
+				tip.setText("请输入昵称");
+				return;
+			}
+			String phoneNumber = phoneNumberT.getText().toString();
+			if(null == phoneNumber || "".equals(phoneNumber)){
+				tip.setTextColor(Color.RED);
+				tip.setText("请输入电话号码");
+				return;
+			}
+			String pwd1 = pwd1T.getText().toString();
+			if(null == pwd1 || "".equals(pwd1)){
+				tip.setTextColor(Color.RED);
+				tip.setText("请输入密码");
+				return;
+			}
+			String pwd2 = pwd2T.getText().toString();
+			if(null == pwd2 || "".equals(pwd2)){
+				tip.setTextColor(Color.RED);
+				tip.setText("请输入确认密码");
+				return;
+			}
+			if(!pwd1.equals(pwd2)){
+				tip.setTextColor(Color.RED);
+				pwd2T.setText("");
+				tip.setText("确认密码不对 请重输");
+				return;
+			}
+			
+			//数据校验后 联网校验
+			if(!SystemUtils.netWorkStatus()){
+				Toast.makeText(RegistActivity.this, "请检查网络", Toast.LENGTH_LONG).show();
+				return;
+			}
+			
+			JSONParser httpJson = new JSONParser();
+			List<NameValuePair> params = new ArrayList<NameValuePair>();
+			params.add(new BasicNameValuePair("userName", userName));
+			params.add(new BasicNameValuePair("phoneNumber", phoneNumber));
+			params.add(new BasicNameValuePair("pwd", pwd1));
+			params.add(new BasicNameValuePair("eastimepaycar", "eastimepaycar"));
+			String jsonResult = httpJson.makeHttpRequest(Contants.SAVEUSERS_URL, Contants.METHOD_POST, params);
+			
+			try {
+				JSONObject json = new JSONObject(jsonResult);
+				String result = (String) json.get("result");
+				if("0".equals(result)){
+					//注册成功
+					
+				}else if("1".equals(result)){
+					//注册失败
+					
+				}else{
+					//用户名已存在
+					
+				}
+			} catch (JSONException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+			
+		}
+	};
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.regist, menu);
+		return true;
+	}
+
+}

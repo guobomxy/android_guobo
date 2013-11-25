@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Login"
+    android:background="@color/maintheme">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ca1" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="长安汽车整车物流"
+        android:textColor="#1E90FF"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="承运客户端"
+        android:textColor="#1E90FF"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="24sp" />
+     <View
+        android:layout_width="50dip"
+        android:layout_height="2dip"
+        android:layout_below="@+id/textView1"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_marginTop="14sp"
+        android:background="#1E90FF" />
+
+     <TextView 
+         android:id="@+id/zt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/textView1"
+         android:layout_alignBottom="@+id/editText2"
+         android:text="账号 "
+         android:textSize="16sp"
+         android:textColor="@color/white"/>
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/zt"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_centerVertical="true"
+        android:hint="请输入账号"
+        android:textColor="#ffffff"
+        android:background="@color/maintheme"
+        android:ems="10" />
+    <View 
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_alignRight="@+id/editText2"
+        android:background="#d3d3d3"
+        android:layout_height="1sp"/>
+
+    
+    <TextView 
+         android:id="@+id/zt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/textView1"
+         android:layout_alignBottom="@+id/editText1"
+         android:text="密码 "
+         android:textSize="16sp"
+         android:textColor="@color/white"/>
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:inputType="textPassword" 
+        android:textColor="#ffffff"
+        android:background="@color/maintheme"
+        android:hint="请输入密码">
+    </EditText>
+    <View 
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_alignRight="@+id/editText1"
+        android:background="#d3d3d3"
+        android:layout_height="1sp"/>
+
+    <Button
+        android:id="@+id/longinbt"
+        android:background="#1E90FF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/zt"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:text="登  陆" 
+        android:textSize="20sp"/>
+    <Button 
+        android:id="@+id/registbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/registcolor"
+        android:layout_below="@+id/longinbt"
+        android:layout_alignLeft="@+id/longinbt"
+        android:layout_alignRight="@+id/longinbt"
+        android:text="注  册"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+    
+
+
+
+</RelativeLayout>

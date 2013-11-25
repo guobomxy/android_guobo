@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Login"
+    android:background="@color/maintheme">
+
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="@string/logo_text1"
+        android:textColor="@color/bc_main1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="28sp" />
+
+    <View
+        android:layout_width="60dp" 
+        android:layout_height="2dp"
+        android:layout_marginTop="13sp"
+        android:layout_below="@+id/textView1"
+        android:layout_toLeftOf="@+id/textView2"
+        android:background="@color/bc_main1"
+        />
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="@string/logo_text2"
+        android:textColor="@color/bc_main1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="27sp" />
+
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_below="@+id/textView2"
+        android:hint="@string/login_nick"
+        android:textColor="@color/maintheme"
+        android:background="@color/white"
+        android:textSize="20sp" />
+
+
+    
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        
+        android:textSize="20sp"
+        android:inputType="textPassword" 
+        android:textColor="@color/maintheme"
+        android:background="@color/white"
+        android:hint="@string/login_pwd">
+    </EditText>
+
+
+    <Button
+        android:id="@+id/longinbt"
+        android:background="@color/bc_main1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+		
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:text="@string/login" 
+        android:textSize="20sp"/>
+    <Button 
+        android:id="@+id/registbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+       
+        android:background="@color/bc_main1"
+        android:layout_below="@+id/longinbt"
+        android:layout_alignLeft="@+id/longinbt"
+        android:layout_alignRight="@+id/longinbt"
+        android:text="@string/regist1"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+    
+
+
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/chase" >
+
+    <RelativeLayout
+        android:id="@+id/rl4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/titlebar" >
+
+        <ImageView
+            android:id="@+id/tip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:src="@drawable/icon_5_d" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tip1"
+            android:text="@string/regist"
+            android:textColor="@color/titletext"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+	<RelativeLayout 
+	    android:id="@+id/mimall"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="15dp"
+	    android:layout_marginBottom="15dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true">
+	    "
+	    
+		<TextView 
+	        android:id="@+id/mimalabel0"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        
+	        android:text="输入密码  "
+	        android:textSize="20sp"
+	        android:textColor="#696969"/>
+	    <EditText 
+	        android:id="@+id/mima1"
+	        android:layout_width="150dp"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/mimalabel0"
+	        android:layout_alignBottom="@+id/mimalabel0"
+	        android:textColor="@color/white"
+	        android:textSize="20sp"
+	        />	    
+	</RelativeLayout>
+    <TextView 
+        android:id="@+id/pnlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_alignLeft="@+id/mimall"
+        android:layout_above="@+id/mimall"
+        android:text="手机号码  "
+        android:textSize="20sp"
+        android:textColor="#696969"/>
+    <EditText 
+        android:id="@+id/phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/pnlabel"
+        android:layout_alignRight="@+id/mimall"
+        android:layout_alignBottom="@+id/pnlabel"
+        android:textColor="@color/white"
+	    android:textSize="20sp"
+        />
+    <TextView 
+        android:id="@+id/zhlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pnlabel"
+        android:layout_above="@+id/pnlabel"
+        android:text="输入昵称  "
+        android:textSize="20sp"
+        android:textColor="#696969"/>
+    <EditText 
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/zhlabel"
+        android:layout_alignRight="@+id/phonenumber"
+        android:layout_alignBottom="@+id/zhlabel"
+        android:textColor="@color/white"
+	    android:textSize="20sp"
+        />
+    
+    <TextView 
+        android:id="@+id/tip_regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15sp"
+        android:layout_above="@+id/zhlabel"
+        android:layout_alignLeft="@+id/zhlabel"
+        android:text="11111111111"
+        android:textSize="15sp"
+        android:textColor="@color/green"/>
+    
+    <TextView 
+        android:id="@+id/mimalabel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15sp"
+        android:layout_alignLeft="@+id/mimall"
+        android:layout_below="@+id/mimall"
+        android:text="确认密码  "
+        android:textSize="20sp"
+        android:textColor="#696969"/>
+    <EditText 
+        android:id="@+id/mima2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/mimalabel1"
+        android:layout_alignRight="@+id/mimall"
+        android:layout_alignBottom="@+id/mimalabel1"
+        android:textColor="@color/white"
+	    android:textSize="20sp"
+        />
+    <Button 
+        android:id="@+id/querenregist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mimalabel1"
+        android:layout_alignLeft="@+id/mimalabel1"
+        android:layout_alignRight="@+id/mima2"
+        android:text="确认注册"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">整车物流承运客户端</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_manage1">当前记录</string>
+    <string name="title_activity_manage2">上传记录</string>
+    <string name="title_activity_manage3">历史记录</string>
+    <string name="title_activity_manage4">系统设置</string>
+    <string name="title_activity_manage5">交车流程</string>
+    <string name="title_activity_manage6">拍照</string>
+    <string name="title_activity_manage7">扫描</string>
+    <string name="main_news">交车</string>
+    <string name="main_home">接车</string>
+    <string name="more">系统</string>
+    <string name="main_manage_date">查询</string>
+    <string name="title_activity_manage">Manage</string>
+    <string name="title_activity_photo">Photo</string>
+
+</resources>

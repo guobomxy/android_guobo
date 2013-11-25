@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--     android:layout_width="match_parent" -->
+<!--     android:layout_height="match_parent" -->
+<!--     android:orientation="vertical"  -->
+<!--     android:background="#333333"> -->
+
+<!--     <EditText  -->
+<!--         android:id="@+id/beizhuT" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:minLines="5" -->
+<!--         android:gravity="top" -->
+<!--         android:textSize="15sp" -->
+<!--         android:hint="@string/beizhutip" -->
+        
+<!--         android:shadowColor="#ffffff" -->
+<!--         android:shadowDx="4" -->
+<!--         android:shadowDy="4" -->
+<!--         android:textColor="#ffffff" -->
+<!--         android:background="@null"/> -->
+    
+<!--     <RelativeLayout  -->
+<!--         android:layout_marginTop="100dp" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content"> -->
+<!--         <Button  -->
+<!--             android:id="@+id/fanhui_beizhu" -->
+<!--             android:layout_width="100dp" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentLeft="true" -->
+            
+<!--             android:text="@string/fanhui" -->
+<!--             android:background="#00BFFF" -->
+<!--             /> -->
+<!--         <Button  -->
+<!--             android:id="@+id/wanchengjiaoche_beizhu" -->
+<!--             android:layout_width="100dp" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentRight="true" -->
+            
+<!--             android:text="@string/wanchengbtn" -->
+<!--             android:background="#00BFFF"/> -->
+<!--     </RelativeLayout> -->
+    
+
+<!-- </LinearLayout> -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maintheme" >
+    
+    
+    <TextView 
+        android:id="@+id/logo4_paycar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:text="@string/logo4"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+    
+    <TextView 
+        android:id="@+id/paycarsaomadanhao3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_alignLeft="@+id/logo4_paycar"
+        android:layout_below="@+id/logo4_paycar"
+        android:text="单号：545637389"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+    
+    <EditText
+        android:id="@+id/beizhuT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40sp"
+        android:layout_alignLeft="@+id/paycarsaomadanhao3"
+        android:layout_below="@+id/paycarsaomadanhao3"
+        android:layout_above="@+id/fanhui1"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/beizhutip"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="top"
+        android:background="@null"
+        android:minLines="6"
+        android:maxLines="6"/>
+    
+     <Button 
+         android:id="@+id/fanhui_beizhu"
+         android:layout_width="100sp"
+         android:layout_height="40sp"
+         
+         android:layout_alignLeft="@+id/beizhuT"
+         android:background="@color/bc_main1"
+         android:textColor="@color/white"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="80dp"
+         android:text="@string/fanhui"/>
+     <Button 
+         android:id="@+id/wanchengjiaoche_beizhu"
+         android:layout_width="100sp"
+         android:layout_height="40sp"
+         
+         android:layout_alignRight="@+id/beizhuT"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="80dp"
+         android:background="@color/bc_main1"
+         android:textColor="@color/white"
+         android:text="@string/next"/>
+    
+    
+    </RelativeLayout>
+
+

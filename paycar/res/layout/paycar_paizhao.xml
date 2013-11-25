@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--     android:layout_width="match_parent" -->
+<!--     android:layout_height="match_parent" -->
+<!--     android:background="#333333" -->
+<!--     android:orientation="vertical" > -->
+
+<!--     <RelativeLayout  -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_marginTop="10dp" -->
+<!--         android:gravity="center" -->
+<!--         android:layout_gravity="center_horizontal"> -->
+
+<!--     <ImageView -->
+<!--         android:id="@+id/paizhaoiv" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+        
+<!--         android:src="@drawable/paizhao" /> -->
+
+<!--     <ImageView -->
+<!--         android:id="@+id/bendi" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+        
+<!--         android:layout_marginLeft="24dp" -->
+<!--         android:layout_toRightOf="@+id/paizhaoiv" -->
+<!--         android:src="@drawable/bendi" /> -->
+    
+<!--     </RelativeLayout> -->
+    
+    
+    
+<!--     <ImageView  -->
+<!--         android:id="@+id/preimage" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="200dp" -->
+<!--         android:layout_marginTop="20dp" -->
+<!--         android:src="@drawable/preview"/> -->
+    
+    
+<!--     <RelativeLayout  -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_marginTop="10dp"> -->
+<!--         <Button  -->
+<!--             android:id="@+id/fanhui" -->
+<!--             android:layout_width="100dp" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentLeft="true" -->
+<!--             android:text="@string/fanhui" -->
+<!--             android:textSize="20sp" -->
+<!--             android:textColor="#ffffff" -->
+<!--             android:background="@color/blue"/> -->
+
+<!--         <Button -->
+<!--             android:id="@+id/next" -->
+<!--             android:layout_width="100dp" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_alignParentTop="true" -->
+<!--             android:text="@string/next" -->
+<!--             android:textSize="20sp" -->
+<!--             android:textColor="#ffffff" -->
+<!--             android:background="@color/blue" /> -->
+        
+<!--     </RelativeLayout> -->
+<!-- </LinearLayout> -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maintheme" >
+    
+    
+    <TextView 
+        android:id="@+id/logo3_paycar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:text="@string/logo3"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+    
+    <TextView 
+        android:id="@+id/paycarsaomadanhao2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_alignLeft="@+id/logo3_paycar"
+        android:layout_below="@+id/logo3_paycar"
+        android:text="单号：545637389"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+    
+     <ImageView 
+        android:id="@+id/preimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40sp"
+        android:layout_alignLeft="@+id/paycarsaomadanhao2"
+        android:layout_below="@+id/paycarsaomadanhao2"
+        android:layout_above="@+id/fanhui"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        
+        android:src="@drawable/preview"/>
+    
+     <Button 
+         android:id="@+id/fanhui"
+         android:layout_width="100sp"
+         android:layout_height="40sp"
+         
+         android:layout_alignLeft="@+id/preimage"
+         android:background="@color/bc_main1"
+         android:textColor="@color/white"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="80dp"
+         android:text="@string/fanhui"/>
+     <Button 
+         android:id="@+id/next"
+         android:layout_width="100sp"
+         android:layout_height="40sp"
+         
+         android:layout_alignRight="@+id/preimage"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="80dp"
+         android:background="@color/bc_main1"
+         android:textColor="@color/white"
+         android:text="@string/next"/>
+
+</RelativeLayout>

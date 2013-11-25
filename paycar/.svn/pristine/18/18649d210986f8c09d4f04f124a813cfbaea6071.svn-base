@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DetailInfo" >
+
+    <RelativeLayout
+        android:id="@+id/rl5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:paddingBottom="4dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/maintheme" >
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingTop="15dp"
+            android:layout_marginLeft="5dp"
+            
+            android:text="@string/detail"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </RelativeLayout>
+    <View 
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="1sp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/rl5"
+        android:background="@color/view_line"/>
+    
+    <TextView
+        android:id="@+id/danhaolabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:text="单        号："
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/danhao_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/danhaolabel"
+        android:layout_below="@+id/view2"
+        android:text="12345678901234"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/zhuangtailabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/danhaolabel"
+        android:text="状        态："
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/status_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/zhuangtailabel"
+        android:layout_toRightOf="@+id/zhuangtailabel"
+        android:text="成功交车"
+        android:textColor="@color/blue"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/datelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zhuangtailabel"
+        android:text="接车日期："
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/date_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/datelabel"
+        android:layout_toRightOf="@+id/datelabel"
+        android:text="2013-09-08 11:11:11"
+        android:textColor="@color/blue"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/datelabe2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/datelabel"
+        android:text="交车日期："
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/date_detai2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/datelabe2"
+        android:layout_toRightOf="@+id/datelabe2"
+        android:text="2013-10-09 11:11:11"
+        android:textColor="@color/blue"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/miaoshulabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/datelabe2"
+        android:layout_below="@+id/datelabe2"
+        android:text="描       述："
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/miaoshu_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/date_detail"
+        android:layout_below="@+id/date_detai2"
+        android:layout_toRightOf="@+id/miaoshulabel"
+        android:text="111111111111111111111111111"
+        android:textColor="@color/blue"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tupianlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/miaoshulabel"
+        android:layout_below="@+id/miaoshu_detail"
+        android:layout_marginTop="10dp"
+        android:text="签名图片："
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/image_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tupianlabel"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/white"
+        android:background="@color/bc_main1"
+        android:text="@string/upload" />
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eastime.paycar"
+    android:versionCode="1"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:name="com.eastime.paycar.util.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/ca11"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.eastime.paycar.Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.eastime.paycar.activitys.Manage"
+            android:icon="@drawable/d"
+            android:label="@string/title_activity_manage1" >
+        </activity>
+        <activity android:name="com.eastime.paycar.activitys.ReceiveCarActivity" />
+        <activity android:name="com.eastime.paycar.activitys.PayCarActivity" />
+        <activity android:name="com.eastime.paycar.activitys.SelectActivity" />
+        <activity android:name="com.eastime.paycar.activitys.SystemSettingActivity" />
+        <activity
+            android:name="com.eastime.paycar.activitys.Photo"
+            android:label="@string/title_activity_photo" >
+        </activity>
+        <activity
+            android:name="com.eastime.paycar.zxingdecodeing.CaptureActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <service android:name="com.eastime.paycar.services.GPSService" >
+        </service>
+        <service android:name="com.eastime.paycar.services.GetJiZhanInfoService" >
+        </service>
+
+        <activity
+            android:name="com.eastime.paycar.activitys.DetailInfo"
+            android:label="@string/title_activity_detail_info" >
+        </activity>
+        <activity
+            android:name="com.eastime.paycar.activitys.ShowBigImg"
+            android:label="@string/title_activity_show_big_img" >
+        </activity>
+        <activity
+            android:name="com.eastime.paycar.activitys.RegistActivity"
+            android:label="@string/title_activity_regist" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+
+</manifest>

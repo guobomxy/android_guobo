@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#333333">
+
+    <EditText 
+        android:id="@+id/beizhuT"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minLines="5"
+        android:gravity="top"
+        android:textSize="15sp"
+        android:hint="@string/beizhutip"
+        
+        android:shadowColor="#ffffff"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:textColor="#ffffff"
+        android:background="@null"/>
+    
+    <RelativeLayout 
+        android:layout_marginTop="100dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button 
+            android:id="@+id/fanhui_beizhu"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            
+            android:text="@string/fanhui"
+            android:background="#00BFFF"
+            />
+        <Button 
+            android:id="@+id/wanchengjiaoche_beizhu"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            
+            android:text="@string/wanchengbtn"
+            android:background="#00BFFF"/>
+    </RelativeLayout>
+    
+
+</LinearLayout>

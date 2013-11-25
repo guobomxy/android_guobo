@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maintheme" >
+    
+    
+    <TextView 
+        android:id="@+id/logo1_paycar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:text="@string/logo1"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+    
+     <Button 
+        android:id="@+id/saomaiv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:layout_below="@+id/logo1_paycar"
+        android:layout_centerHorizontal="true"
+        android:background="@color/bc_main1"
+        android:textColor="@color/white"
+        android:text="@string/smyd"/>
+    
+     <Button 
+        android:id="@+id/shoushuyundan_paycar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/saomaiv"
+        android:layout_centerHorizontal="true"
+        android:background="@color/bc_main1"
+        android:textColor="@color/white"
+        android:text="@string/ssyd"/>
+    
+
+</RelativeLayout>

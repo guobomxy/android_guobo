@@ -1,0 +1,42 @@
+package com.eastime.paycar.util;
+
+import java.util.Calendar;
+
+import android.content.Context;
+import android.net.ConnectivityManager;
+
+public class SystemUtils {
+
+	public static String getStr(){
+		
+		Calendar now = Calendar.getInstance();
+		int year = now.get(Calendar.YEAR);
+		int month = now.get(Calendar.MONTH)+1;
+		int day = now.get(Calendar.DAY_OF_MONTH);
+		int hour = now.get(Calendar.HOUR_OF_DAY);
+		int minute = now.get(Calendar.MINUTE);
+		int second = now.get(Calendar.SECOND);
+		
+		return ""+year+"-"+f(month)+"-"+f(day)+" "+f(hour)+":"+f(minute)+":"+f(second);
+	}
+	private static String f(int aa){
+		return aa<10?("0"+aa):aa+"";
+	}
+	
+	
+	//检测是否有网络
+	/**
+	 * 检测是否有网络
+	 * @return  true 为有的
+	 */
+	public static boolean netWorkStatus() {
+		  boolean netSataus = false;
+		  ConnectivityManager cwjManager = (ConnectivityManager)AppContext.getInstance().getSystemService(Context.CONNECTIVITY_SERVICE);
+		  cwjManager.getActiveNetworkInfo();
+		  if (cwjManager.getActiveNetworkInfo() != null) {
+			  netSataus = cwjManager.getActiveNetworkInfo().isAvailable();
+		  }
+		  return netSataus;
+		 }
+	
+}

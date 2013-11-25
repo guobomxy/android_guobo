@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">整车物流承运客户端</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_manage1">当前记录</string>
+    <string name="title_activity_manage2">上传记录</string>
+    <string name="title_activity_manage3">历史记录</string>
+    <string name="title_activity_manage4">系统设置</string>
+    <string name="title_activity_manage5">交车流程</string>
+    <string name="title_activity_manage6">拍照</string>
+    <string name="title_activity_manage7">扫描</string>
+    <string name="main_news">交车</string>
+    <string name="main_home">接车</string>
+    <string name="more">系统</string>
+    <string name="main_manage_date">查询</string>
+    <string name="detail">详细信息</string>
+    <string name="title_activity_manage">Manage</string>
+    <string name="title_activity_photo">Photo</string>
+    <string name="jiechedan">接车</string>
+    <string name="jiaoche">交车</string>
+    <string name="logo1">1.单号录入</string>
+    <string name="logo2">2.选择交车类型</string>
+    <string name="logo3">3.交车单照片</string>
+    <string name="logo4">4.添加备注</string>
+    <string name="chaxun">我要查询</string>
+    <string name="settingstr">我要设置</string>
+    <string name="regist">用户注册</string>
+    <string name="failbtn">交车失败</string>
+    <string name="succbtn">交车成功</string>
+    <string name="cancle">取&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;消</string>
+    <string name="wanchengbtn">完成交车</string>
+    <string name="wanchengbtn1">完    成</string>
+    <string name="fanhui">返&#160;&#160;&#160;回</string>
+    <string name="next">确&#160;&#160;&#160;定</string>
+    <string name="defaultdanhao">单号：请先扫描！！！</string>
+    <string name="beizhutip">请输入备注信息</string>
+    <string name="savesucc">保存成功！</string>
+    <string name="savefail">保存失败！</string>
+    <string name="title_activity_detail_info">详细信息</string>
+    <string name="title_activity_show_big_img">ShowBigImg</string>
+    <string name="systemsetting">系统设置</string>
+    <string name="servertext">服务端设置</string>
+    <string name="localtext">本地设置</string>
+    <string name="upload">上     传</string>
+    <string name="login">登     录</string>
+    <string name="regist1">注     册</string>
+    <string name="login_nick">&#160;请输入本机号码</string>
+    <string name="login_pwd">&#160;请输入密码</string>
+    <string name="regist_pwd">&#160;请重复密码</string>
+    <string name="qsrxingming">&#160;请输入姓名</string>
+    <string name="logo_text1">长安销售物流信息系统</string>
+    <string name="logo_text2">承运客户端</string>
+    <string name="bjhm">本机号码&#160;&#160;</string>
+    <string name="mima">&#160;&#160;&#160;&#160;密&#160;&#160;&#160;&#160;码&#160;&#160;</string>
+    <string name="cfmima">重复密码&#160;&#160;</string>
+    <string name="xingming">&#160;&#160;&#160;&#160;姓&#160;&#160;&#160;&#160;名&#160;&#160;</string>
+    <string name="title_activity_regist">用户注册</string>
+    <string name="smyd">扫&#160;描&#160;运&#160;单</string>
+    <string name="ssyd">手&#160;输&#160;运&#160;单</string>
+    <string name="title_activity_pre">过渡界面</string>
+
+</resources>

@@ -1,0 +1,46 @@
+package com.eastime.paycar;
+
+import com.eastime.paycar.activitys.Manage;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Intent;
+import android.view.View;
+import android.view.Window;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+public class Login extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+        //设置无标题  
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);  
+//        //设置全屏  
+//        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		setContentView(R.layout.activity_login);
+		Button bt = (Button) findViewById(R.id.longinbt);
+		bt.setOnClickListener(new btListener());
+	}
+
+//	@Override
+//	public boolean onCreateOptionsMenu(Menu menu) {
+//		// Inflate the menu; this adds items to the action bar if it is present.
+//		getMenuInflater().inflate(R.menu.login, menu);
+//		return true;
+//	}
+
+	class btListener implements OnClickListener {
+		// 生成该类的对象，并将其注册到控件上。如果该控件被用户按下，就会执行onClick方法
+		public void onClick(View v) {
+			// 生成一个Intent对象
+			Intent intent = new Intent();
+			// 设置Intent对象要启动的Activity
+			intent.setClass(Login.this, Manage.class);
+			// 通过Intent对象启动另外一个Activity
+			Login.this.startActivity(intent);
+		}
+	}
+	
+}

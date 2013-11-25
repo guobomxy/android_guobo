@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#333333" >
+
+
+
+    
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/titlebar" >
+
+        <ImageView
+            android:id="@+id/tip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ca11" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tip1"
+            android:layout_toRightOf="@+id/tip1"
+            android:gravity="center_vertical"
+            android:text="@string/systemsetting"
+            android:textColor="@color/titletext"
+            android:textSize="20sp" />
+
+        </RelativeLayout>
+        <TextView 
+            android:id="@+id/localconfig"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl3"
+            android:paddingLeft="20dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="@string/localtext"/>
+        <View
+        	android:id="@+id/view1"
+        	android:layout_width="400dip"
+        	android:layout_height="1dip"
+        	android:layout_below="@+id/localconfig"
+        	android:background="#cccccc" />
+         <TextView 
+            android:id="@+id/serverconfig"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/localconfig"
+            android:paddingLeft="20dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="@string/servertext"/>
+        <View
+        	android:id="@+id/view1"
+        	android:layout_width="400dip"
+        	android:layout_height="1dip"
+        	android:layout_below="@+id/serverconfig"
+        	android:background="#cccccc" />
+
+</RelativeLayout>

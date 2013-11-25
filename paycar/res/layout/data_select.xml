@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maintheme" >
+    
+    <TextView 
+        android:id="@+id/danhao_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="单号：1234567890123"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/img_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/view1"
+        android:layout_marginTop="20dp"
+        android:text="待提交"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        
+        />
+
+    <TextView
+        android:id="@+id/time_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_below="@+id/danhao_select"
+        android:textColor="@color/timecolor"
+        android:text="2013-05-01至2013-06--04"
+        android:textSize="12sp" />
+	
+	 <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"  
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        
+        android:layout_below="@+id/time_select"     
+        android:background="@color/view_line" />"
+
+</RelativeLayout>

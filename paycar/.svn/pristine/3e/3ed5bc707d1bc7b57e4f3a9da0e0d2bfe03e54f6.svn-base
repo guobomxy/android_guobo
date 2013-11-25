@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#333333" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#222222" >
+
+        <ImageView
+            android:id="@+id/gps"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pictures1" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="单证拍照"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="18dip" />
+    </TableRow>
+   
+
+    <ImageView
+        android:id="@+id/cyq"
+        android:layout_width="96dip"
+        android:layout_height="96dip"
+        android:layout_below="@+id/tableRow1"
+        android:scaleType="center"
+        android:src="@drawable/icon_5_d" />
+
+</RelativeLayout>

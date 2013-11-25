@@ -1,0 +1,25 @@
+package com.eastime.paycar.activitys;
+
+import com.eastime.paycar.R;
+import com.eastime.paycar.R.id;
+import com.eastime.paycar.R.layout;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.TextView;
+
+public class AActivity extends Activity{
+	
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		
+		TextView tv = new TextView(this);
+		setContentView(R.layout.aactivity);
+		View v2= findViewById(R.id.ib1); 
+		 v2.getBackground().setAlpha(0);
+	}
+
+}
